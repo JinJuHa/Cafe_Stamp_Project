@@ -11,15 +11,15 @@
       <div class="job-text">
         <p>자주묻는 질문과 답변</p>
         <span>FAQ</span>
-        <div class="faqList">
-          <div v-for="(list, i) in faqList" :key="list" :faqList="faqList[i]" class="faq">
-            <div class="faqHeading">
-              <p>{{ faqList[i].category }}</p>
-              <p>{{ faqList[i].title }}</p>
-            </div>
-            <div class="faqBody">
-              <p>{{ faqList[i].comment }}</p>
-            </div>
+      </div>
+      <div class="faqList">
+        <div v-for="(list, i) in faqList" :key="list" :faqList="faqList[i]" class="faq">
+          <div class="faqHeading">
+            <p>{{ faqList[i].category }}</p>
+            <p>{{ faqList[i].title }}</p>
+          </div>
+          <div class="faqBody">
+            <p>{{ faqList[i].comment }}</p>
           </div>
         </div>
       </div>
