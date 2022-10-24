@@ -135,7 +135,7 @@ export default {
     async deleteprofile() {
       // console.log('되나?', this.user.password)
       const axiosBody = {
-        Password: this.Password
+        password: this.password
       }
       await axios
         .delete(process.env.VUE_APP_URL + '/profile/remove-profile/' + axiosBody, {
