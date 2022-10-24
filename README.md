@@ -1,4 +1,5 @@
 # vue-project
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=Vue&logoColor=white"/>
 
 ## MY-STAMP
 <img src="public/logo.png" style="width: 450px" />
