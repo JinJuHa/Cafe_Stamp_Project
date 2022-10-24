@@ -2,7 +2,7 @@
 
 ## MY-STAMP
 My Stamp는 카페 도장 쿠폰 솔루션을 제공해주는 웹사이트 입니다.
-<img src="public/logo.png" />
+<img src="public/logo.png" style="width: 200px" />
 
 ## 디렉토리 및 파일 구조
 ```
