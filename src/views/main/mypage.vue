@@ -134,11 +134,8 @@ export default {
     },
     async deleteprofile() {
       // console.log('되나?', this.user.password)
-      const axiosBody = {
-        password: this.password
-      }
       await axios
-        .delete(process.env.VUE_APP_URL + '/profile/remove-profile/' + axiosBody, {
+        .delete(process.env.VUE_APP_URL + '/profile/remove-profile/' + this.user.email, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
