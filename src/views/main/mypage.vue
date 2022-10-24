@@ -86,6 +86,7 @@ export default {
     ownerPhone: '',
     currentPassword: '',
     newPassword: '',
+    password: '',
     show: true,
     on: true
   }),
@@ -133,8 +134,11 @@ export default {
     },
     async deleteprofile() {
       // console.log('되나?', this.user.password)
+      const axiosBody = {
+        Password: this.Password
+      }
       await axios
-        .delete(process.env.VUE_APP_URL + '/profile/remove-profile/' + this.user.email + '/' + this.user.password, {
+        .delete(process.env.VUE_APP_URL + '/profile/remove-profile/' + axiosBody, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }

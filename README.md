@@ -1,24 +1,22 @@
 # vue-project
 
-# MY-STAMP
+## MY-STAMP
 My Stamp는 카페 도장 쿠폰 솔루션을 제공해주는 웹사이트 입니다.
 
 ## 디렉토리 및 파일 구조
 ```
 ├── .vscode                         # VSCode 관련 환경 세팅 디렉토리
 │   └── settings.json
-├── dist                            # 'npm run build'시 js로 변환된 파일 디렉토리
-│   └── ...                         # 실제 nginx를 통해 서비스 되는 파일들(js, css, html)
 ├── node_modules                    # 'npm install'을 통해 설치되는 모듈 파일 디렉토리
 │   └── ...
-├── public                          # index.html 관련 파일이 들어가는 공간
+├── public                          # index.html 과 각종 이미지 파일이 들어있는 공간
 │   └── ...
 ├── src                             # 각종 vue파일과 js파일들이 작성되는 공간
 │   ├── assets                      # 정적파일 서비스 공간
+│   │   └── img                    # 파일 내에서 사용되는 이미지 파일들
+│   │   └── mixins                # 전역으로 사용되는 vue 파일들
 │   │   └── style                   # css파일들
 │   ├── components                  # 각종 component 공간
-│   │   ├── chart                   # 차트관련 컴포넌트
-│   │   │   └── lineChart.js        # 라인차트 컴포넌트
 │   │   ├── layout                  # 레이아웃 컴포넌트(헤더, 사이드바)
 │   │   │   ├── Header.vue          # 헤더 컴포넌트
 │   │   │   └── Sidebar.vue         # 사이드바 컴포넌트
